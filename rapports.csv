@@ -1,0 +1,7 @@
+#!/bin/bash
+for jour in vendredi samedi dimanche
+do
+    echo "id,date,nom,ville,categorie,prix,jour" > "rapports/$jour.csv"
+    grep "$jour" billetterie/ventes.csv >> "rapports/$jour.csv"
+    echo "rapports/$jour.csv écrit"
+done
