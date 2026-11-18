@@ -5,3 +5,4 @@ echo "Dossier actuel : $PWD"
 echo "Date : $(date)"
 echo "Place libre sur le disque:"
 df -h ~
+echo "Fin de la présentation"
